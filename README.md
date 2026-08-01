@@ -1,29 +1,26 @@
 # AR Late Payment Analysis
 
 ## Overview
-An end-to-end accounts receivable analytics project analyzing payment behavior 
-across 2,466 real-world B2B invoices. Built to identify late payment patterns, 
-quantify risk exposure, and surface actionable insights for collections teams.
+Analysis of payment behavior across 2,466 real-world B2B invoices, built to find out which customers pay late, how much risk that creates, and where collections effort should focus.
 
 ## Business Problem
-Which customer segments consistently pay late, and where should collections 
-effort be focused to maximize recovery?
+Which customer segments consistently pay late, and where should collections effort be focused to maximize recovery?
 
 ## Tools Used
-- **PostgreSQL + DBeaver** — data storage and querying
-- **Tableau Public** — data visualization and dashboarding
-- **GitHub** — version control and portfolio
+- PostgreSQL + DBeaver — data storage and querying
+- Tableau Public — visualization and dashboarding
+- GitHub — version control and portfolio
 
 ## Dataset
-- **Source:** IBM B2B Accounts Receivable dataset
-- **Size:** 2,466 invoices
-- **Scope:** Multi-country, multi-billing-type invoice payment data
+- Source: Finance Factoring - IBM Late Payment Histories
+- Size: 2,466 invoices
+- Scope: Multi-country, multi-billing-type invoice payment data
 
-## Key Insights
-- Clients on **electronic billing paid almost twice as fast** as paper billing clients
-- A **small group of repeat late payers** drove the majority of payment risk
-- **Payment behavior varied significantly by country**, identifying where 
-  collections effort yields the highest return
+## Key Findings
+- Electronic billing clients pay almost twice as fast as paper billing clients (2.4 days vs. 4.4 days late on average)
+- A small group of repeat late payers accounts for most of the payment risk — the worst account averages 19.6 days late
+- Payment behavior varies by country; the dataset only provides numeric country codes with no name lookup, so exact countries aren't identified, but the gap between the highest and lowest is worth investigating
+
 
 ## Visualizations
 https://public.tableau.com/views/IBMARLatePaymentAnalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
